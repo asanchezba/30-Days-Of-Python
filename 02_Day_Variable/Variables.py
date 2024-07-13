@@ -100,11 +100,12 @@ print(remainder)
 print(exp)
 print(floor_division)
 
+import math
 radius = 30
-area_of_circle = 3.14 * radius ** 2 
-circum_of_circle = 2 * 3.14 * radius
+area_of_circle = math.pi * radius ** 2 
+circum_of_circle = 2 * math.pi * radius
 #radius = int(input('Enter radius: '))
-area_of_circle = 3.14 * radius ** 2 
+area_of_circle = math.pi * radius ** 2 
 
 print(area_of_circle)
 print(circum_of_circle)
