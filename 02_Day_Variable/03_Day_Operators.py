@@ -65,3 +65,32 @@ mass = 75 # in Kg
 volume = 0.075 # in cubic meter
 density = mass / volume # 1000 Kg/m^3
 print('Density:', density)
+
+
+# Comparison Operators #
+
+print(3 > 2)    
+print(3 >= 2)    
+print(3 < 2)     
+print(2 < 3)     
+print(2 <= 3)    
+print(3 == 2)    
+print(3 != 2)    
+print(len('mango') == len('avocado'))  
+print(len('mango') != len('avocado'))  
+print(len('mango') < len('avocado'))   
+print(len('milk') != len('meat'))      
+print(len('milk') == len('meat'))      
+print(len('tomato') == len('potato'))  
+print(len('python') > len('dragon'))   
+
+print('1 is 1', 1 is 1)
+print('1 is not 2', 1 is not 2)
+print('A in Anna', 'A' in 'Anna')
+print('B in Anna', 'B' in 'Anna')
+print('coding' in 'coding for all')
+print('a in an:', 'a' in 'an')
+print('4 is 2 ** 2:', 4 is 2 ** 2)
+
+
+# Logical Operators #
