@@ -162,4 +162,11 @@ else:
 print(len('python') == len('dragon'))
 print('on' in ('python' and 'dragon'))
 print('jargon' in 'I hope this course is not full of jargon')
+len_pyth = len('pyton')
+len_pyth_float = float(len_pyth)
+len_pyth_str = str(len_pyth_float)
+print(len_pyth_float)
+print(len_pyth_str)
+
+
 
