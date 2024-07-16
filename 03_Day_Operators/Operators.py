@@ -108,3 +108,58 @@ print(not True)
 print(not False)     
 print(not not True)  
 print(not not False) 
+
+
+# Exercicies #
+
+age = 28
+height = 167.0
+complex_number = 4 + 3j 
+
+#Area of a triangle
+#base = input('Enter base:')
+#height = input('Enter height:')
+#print('The area of the triangle is', 0.5*int(base)*int(height))
+
+#Perimeter of a triangle
+#side_a = input('Enter side a:')
+#side_b = input('Enter side b:')
+#side_c = input('Enter side c:')
+#print('The perimeter of the triangle is', int(side_a)*int(side_b)*int(side_c))
+
+#Area and perimeter of a rectangle
+#length = input('Enter lenght:')
+#width = input('Enter width:')
+#print('The area of the rectangle is', int(length)*int(width), 'and the perimeter is', 2*int(length)+int(width))
+
+#Radius and circumference of a circle
+from math import pi as PI
+#radius = input('Enter radius:')
+#area = PI * int(radius) ** 2
+#circumference = 2 * PI * int(radius)
+#print('The area of the circle is', area, 'and the cirfumference is', circumference)
+
+import math
+
+# Coefficients of the quadratic equation
+a = 1
+b = 6
+c = 9
+
+# Calculate the discriminant
+discriminant = b**2 - 4*a*c
+
+if discriminant >= 0:
+    # Calculate the two possible roots
+    root1 = (-b + math.sqrt(discriminant)) / (2*a)
+    root2 = (-b - math.sqrt(discriminant)) / (2*a)
+    
+    print(f"The roots of the equation are: {root1} and {root2}")
+else:
+    print("The equation has no real roots.")
+
+
+print(len('python') == len('dragon'))
+print('on' in ('python' and 'dragon'))
+print('jargon' in 'I hope this course is not full of jargon')
+
