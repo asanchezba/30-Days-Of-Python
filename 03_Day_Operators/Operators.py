@@ -168,5 +168,29 @@ len_pyth_str = str(len_pyth_float)
 print(len_pyth_float)
 print(len_pyth_str)
 
+#Check if a number is even
+#number = int(input('Enter a number:'))
+#if number % 2 == 0:
+    #print('This number is even')
+#else:
+   # print('This number is odd')
 
 
+print(7//3 == int(2.7))
+print(type('10') == type(10))
+print(int(9.8) == 10)
+
+def display_table():
+    
+    # Iterate through the rows
+    for i in range(1, 6):
+        value1 = 1
+        value2 = i
+        value3 = i ** 2
+        value4 = i ** 3
+        
+        # Print the values in a formatted way
+        print(f"{i:<6} {value1:<6} {value2:<6} {value3:<6} {value4:<6}")
+
+# Call the function to display the table
+display_table()
