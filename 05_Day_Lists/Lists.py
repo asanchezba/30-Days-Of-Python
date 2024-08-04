@@ -31,3 +31,27 @@ mango_apple_kiwi = fruits[1:]
 print(mango_apple_kiwi)
 banana_and_apple = fruits[::2] # here we used a 3rd argument, step. It will take every 2cnd item
 print(banana_and_apple)
+
+# Modifying lists
+fruits = ['banana', 'orange', 'mango', 'lemon']
+fruits[0] = 'avocado'
+print(fruits)       #  ['avocado', 'orange', 'mango', 'lemon']
+fruits[1] = 'apple'
+print(fruits)       #  ['avocado', 'apple', 'mango', 'lemon']
+last_index = len(fruits) - 1
+fruits[last_index] = 'lime'
+print(fruits)        #  ['avocado', 'apple', 'mango', 'lime']
+
+# Checking Items in a List
+fruits = ['banana', 'orange', 'mango', 'lemon']
+does_exist = 'banana' in fruits
+print(does_exist)  # True
+does_exist = 'lime' in fruits
+print(does_exist)  # False
+
+# Adding Items to a List
+fruits = ['banana', 'orange', 'mango', 'lemon']
+fruits.append('apple')
+print(fruits)           # ['banana', 'orange', 'mango', 'lemon', 'apple']
+fruits.append('lime')   # ['banana', 'orange', 'mango', 'lemon', 'apple', 'lime']
+print(fruits)
