@@ -55,3 +55,64 @@ fruits.append('apple')
 print(fruits)           # ['banana', 'orange', 'mango', 'lemon', 'apple']
 fruits.append('lime')   # ['banana', 'orange', 'mango', 'lemon', 'apple', 'lime']
 print(fruits)
+
+# Inserting Items to a List
+fruits = ['banana', 'orange', 'mango', 'lemon']
+fruits.insert(2, 'apple') # insert apple between orange and mango
+print(fruits)        
+fruits.insert(3, 'lime')   # insert lime between apple and mango
+print(fruits)
+
+# Removing Items for a List
+fruits = ['banana', 'orange', 'mango', 'lemon', 'banana']
+fruits.remove('banana') # removes the first occurrence of the item in the list
+print(fruits) 
+fruits.remove('lemon')
+print(fruits)
+
+# Removing Items Using Pop
+fruits = ['banana', 'orange', 'mango', 'lemon']
+fruits.pop() # removes the last item if index is not specified
+print(fruits)
+fruits.pop(0)
+print(fruits)
+
+# Removing Items Using Del
+fruits = ['banana', 'organge', 'mango', 'lemon', 'kiwi', 'lime']
+del fruits[0]
+print(fruits)
+del fruits[1]
+print(fruits)
+del fruits[1:3]
+print(fruits)
+#del fruits # delets the list completely
+#print(fruits)
+
+# Clearing List Items
+fruits = ['banana', 'orange', 'mango', 'lemon']
+fruits.clear()
+print(fruits)
+
+# Copying a List
+fruits = ['banana', 'orange', 'mango', 'lemon']
+fruits_copy = fruits.copy()
+print(fruits_copy)
+
+# Joining Lists
+positive_numbers = [1, 2, 3, 4, 5]
+zero = [0]
+negative_numbers = [-5, -4, -3, -2, -1]
+integers = negative_numbers + zero + positive_numbers
+print(integers)
+
+num1 = [0, 1, 2, 3]
+num2 = [4, 5, 6]
+num1.extend(num2)
+print('Numbers:', num1)
+
+negative_numbers = [-5,-4,-3,-2,-1]
+positive_numbers = [1, 2, 3,4,5]
+zero = [0]
+negative_numbers.extend(zero)
+negative_numbers.extend(positive_numbers)
+print('Integers:', negative_numbers)
