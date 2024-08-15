@@ -116,3 +116,50 @@ zero = [0]
 negative_numbers.extend(zero)
 negative_numbers.extend(positive_numbers)
 print('Integers:', negative_numbers)
+
+# Counting Items in a List
+fruits = ['banana', 'orange', 'mango', 'lemon']
+print(fruits.count('orange')) # returns the number of times an item appears in a list
+
+# Finding Index of an Item
+fruits = ['banana', 'orange', 'mango', 'lemon']
+print(fruits.index('mango'))
+
+# Reversing a List
+fruits = ['banana', 'orange', 'mango', 'lemon']
+fruits.reverse()
+print(fruits)
+
+# Sorting List Items
+fruits = ['banana', 'orange', 'mango', 'lemon']
+fruits.sort() # list items in ascending order and modifies the original list
+print(fruits)
+fruits.sort(reverse=True) # list items in descending order and modifies the original list
+print(fruits)
+
+fruits = ['banana', 'orange', 'mango', 'lemon']
+print(sorted(fruits)) # list items in ascending order without modifying the original list
+fruits = sorted(fruits, reverse=True)
+print(fruits) # list items in descending order without modifying the original list
+
+
+# Exercicies
+empty_list = []
+new_list = ['Arsenal', 'Barça', 'Juventus', 10, 4, 14]
+print(len(new_list))
+first_item = new_list[0]
+print(first_item)
+middle_item = new_list[2]
+print(middle_item)
+last_item = new_list[5]
+print(last_item)
+
+mixed_data_types = ['Anna', 28, 167, 'single', 'Sabadell']
+it_companies = ['Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon']
+print(it_companies)
+first_company = it_companies[0]
+print(first_company)
+middle_company = it_companies[3]
+print(middle_company)
+last_company = it_companies[6]
+print(last_company)
