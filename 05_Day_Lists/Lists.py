@@ -145,6 +145,7 @@ print(fruits) # list items in descending order without modifying the original li
 
 # Exercicies
 empty_list = []
+
 new_list = ['Arsenal', 'Barça', 'Juventus', 10, 4, 14]
 print(len(new_list))
 first_item = new_list[0]
@@ -155,6 +156,7 @@ last_item = new_list[5]
 print(last_item)
 
 mixed_data_types = ['Anna', 28, 167, 'single', 'Sabadell']
+
 it_companies = ['Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon']
 print(it_companies)
 first_company = it_companies[0]
@@ -163,3 +165,5 @@ middle_company = it_companies[3]
 print(middle_company)
 last_company = it_companies[6]
 print(last_company)
+it_companies.insert(2, 'Linux')
+print(it_companies)
