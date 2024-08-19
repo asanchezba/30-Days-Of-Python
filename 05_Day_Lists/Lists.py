@@ -200,4 +200,33 @@ it_companies = ['Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Am
 three_first_companies = it_companies[0:3 and 4:7]
 print(three_first_companies)
 
+# Remove the first IT company from the list
+it_companies = ['Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon']
+it_companies.remove('Facebook')
+print(it_companies)
+
+# Remove the first IT company from the list
+it_companies = ['Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon']
+it_companies.pop(3)
+print(it_companies)
+
+# Remove the last IT company from the list
+it_companies = ['Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon']
+it_companies.pop()
+print(it_companies)
+
+# Remove all IT companies from the list
+it_companies = ['Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon']
+it_companies.clear()
+print(it_companies)
+
+# Destroy the IT companies list
+it_companies = ['Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon']
+del it_companies
+
+# Join the follwoing lists
+front_end = ['HTML', 'CSS', 'JS', 'React', 'Redux']
+back_end = ['Node', 'Express', 'MongoDB']
+full_stack = front_end + back_end
+print(full_stack)
 
