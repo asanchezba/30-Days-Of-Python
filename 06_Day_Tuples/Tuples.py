@@ -25,3 +25,12 @@ last_fruit = fruits[-1]
 print(last_fruit)
 
 # Slicing tuples
+fruits = ('banana', 'orange', 'mango', 'lemon')
+all_fruits = fruits[0:4]    # all items
+print(all_fruits)
+all_fruits= fruits[0:]      # all items
+print(all_fruits)
+orange_mango = fruits[1:3]  # doesn't include itesm from index 3 to last
+print(orange_mango)
+orange_to_the_rest = fruits[1:]
+print(orange_to_the_rest)
