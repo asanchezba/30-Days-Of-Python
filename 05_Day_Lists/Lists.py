@@ -167,3 +167,37 @@ last_company = it_companies[6]
 print(last_company)
 it_companies.insert(2, 'Linux')
 print(it_companies)
+it_companies[0] = 'FACEBOOK'
+print(it_companies)
+string = '#; '
+it_companies.extend(string)
+print(it_companies)
+
+# Check if a company exists
+does_exist = 'Apple' in it_companies
+print(does_exist)
+
+# Sort the list using sort()
+it_companies.sort()
+print(it_companies)
+
+# Reverse the list in descending order using reverse ()
+it_companies.sort(reverse=True)
+print(it_companies)
+
+# Slice out the first 3 companies from the list
+it_companies = ['Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon']
+three_first_companies = it_companies[3:]
+print(three_first_companies)
+
+# Slice out the last 3 companies from the list
+it_companies = ['Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon']
+three_first_companies = it_companies[0:4]
+print(three_first_companies)
+
+# Slice out the middle IT company or companies from the list
+it_companies = ['Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon']
+three_first_companies = it_companies[0:3 and 4:7]
+print(three_first_companies)
+
+
