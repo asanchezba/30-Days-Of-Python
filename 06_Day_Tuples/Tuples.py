@@ -63,3 +63,35 @@ print(fruits_and_vegetables)
 fruits = ('banana', 'orange', 'mango', 'lemon')
 del fruits # It is not possible to remove a single item in a tuple but it is possible to delete the tuple itself 
 
+
+# Exercicies
+
+# 1.Create an empty tuple
+empty_tuple = ()
+
+# 2.Create a tuple containing names of your sisters and your brothers 
+sisters = ('Ruby', 'Alina', 'Jess', 'Hayley')
+brothers = ('Harry', 'Josh', 'Ethan', 'Simon', 'Tobi', 'Vikstar', 'KSI')
+
+# 3.Join brothers and sisters tuples and assign it to siblings
+siblings = sisters + brothers
+
+# 4.Modify the siblings tuple and add the name of your father and mother and assign it to family_members
+siblings = list(siblings)
+siblings[0] = 'Dad'
+siblings[1] = 'Mum'
+family_members = tuple(siblings)
+print(family_members)
+
+# 5.Create fruits, vegetables and animal products tuples. Join the three tuples and assign it to a variable called food_stuff_tp
+fruits = ('banana', 'orange', 'mango', 'lemon')
+vegetables = ('Tomato', 'Potato', 'Cabbage','Onion', 'Carrot')
+animal_products = ('eggs', 'cheese', 'milk')
+food_stuff_tp = fruits + vegetables + animal_products
+print(food_stuff_tp)
+
+# 6.Change the about food_stuff_tp tuple to a food_stuff_lt list
+food_stuff_lt = list(food_stuff_tp)
+
+# 7.Slice out the middle item or items from the food_stuff_tp tuple or food_stuff_lt list.
+
