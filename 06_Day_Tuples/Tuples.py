@@ -30,14 +30,14 @@ all_fruits = fruits[0:4]    # all items
 print(all_fruits)
 all_fruits= fruits[0:]      # all items
 print(all_fruits)
-orange_mango = fruits[1:3]  # doesn't include itesm from index 3 to last
+orange_mango = fruits[1:3]  # doesn't include items from index 3 to last
 print(orange_mango)
 orange_to_the_rest = fruits[1:]
 print(orange_to_the_rest)
 
 fruits = ('banana', 'orange', 'mango', 'lemon')
 all_fruits = fruits[-4:]    # all items
-orange_mango = fruits[-3:-1]  # doesn't include itesm from index 3 to last
+orange_mango = fruits[-3:-1]  # doesn't include items from index 3 to last
 orange_to_the_rest = fruits[-3:]
 
 # Changing Tuples to Lists
@@ -93,5 +93,19 @@ print(food_stuff_tp)
 # 6.Change the about food_stuff_tp tuple to a food_stuff_lt list
 food_stuff_lt = list(food_stuff_tp)
 
-# 7.Slice out the middle item or items from the food_stuff_tp tuple or food_stuff_lt list.
+# 7.Slice out the first three items and the last three items from food_staff_lt list
+first_three_items = food_stuff_lt [3:12]
+print(first_three_items)
+last_three_items = food_stuff_lt [0:9]
+print(last_three_items)
+
+# 8.Delete the food_staff_tp tuple completely
+del food_stuff_tp
+
+# 9.Check if an item exists in tuple
+nordic_countries = ('Denmark', 'Finland','Iceland', 'Norway', 'Sweden')
+print('Estonia' in nordic_countries)
+print('Iceland' in nordic_countries)
+
+
 
