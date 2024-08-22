@@ -88,3 +88,93 @@ dct = {'key1':'value1', 'key2':'value2', 'key3':'value3', 'key4':'value4'}
 del dct
 
 # Copy a Dictionary
+dct = {'key1':'value1', 'key2':'value2', 'key3':'value3', 'key4':'value4'}
+dct_copy = dct.copy()
+
+# Getting Dictionary Keys as a List
+dct = {'key1':'value1', 'key2':'value2', 'key3':'value3', 'key4':'value4'}
+keys = dct.keys()
+print(keys) 
+
+# Getting Dictionary Values as a List
+dct = {'key1':'value1', 'key2':'value2', 'key3':'value3', 'key4':'value4'}
+values = dct.values()
+print(values)
+
+
+
+#Exercicies
+# 1.Create an empty dictionary called dog
+dog = {}
+
+# 2.Add name, color, breed, legs, age to the dog dictionary
+dog['name'] = 'Roscoe'
+dog['colour'] = 'Brown'
+dog['breed'] = 'Bulldog'
+dog['legs'] = 4
+dog['age'] = 11
+print(dog)
+
+# 3.Create a student dictionary and add first_name, last_name, gender, age, marital status, skills, country, city and address as keys for the dictionary
+student = {
+    'first_name': 'Anna',
+    'last_name': 'Sánchez',
+    'gender': 'female',
+    'age': 28,
+    'marital_status': 'not married',
+    'skills': ['Python', 'Matlab'],
+    'country': 'Spain',
+    'city': 'Barcelona'
+}
+
+# 4.Get the length of the student dictionary
+print(len(student))
+
+# 5.Get the value of skills and check the data type, it should be a list
+student = {
+    'first_name': 'Anna',
+    'last_name': 'Sánchez',
+    'gender': 'female',
+    'age': 28,
+    'marital_status': 'not married',
+    'skills': ['Python', 'Matlab'],
+    'country': 'Spain',
+    'city': 'Barcelona'
+}
+skills = student.get('skills')
+print(type(skills))
+
+# 6. Modify the skills values by adding one or two skills
+student['skills'].append('HTML')
+student['skills'].append('CSS')
+student['skills'].append('JavaScript')
+print(student)
+
+# 7.Get the dictionary keys as a list
+keys = student.keys()
+print(keys) 
+
+# 8.Get the dictionary values as a list
+values = student.values()
+print(values)
+
+# 9.Change the dictionary to a list of tuples using items() method
+print(student.items())
+
+# 10.Delete one of the items in the dictionary
+student = {
+    'first_name': 'Anna',
+    'last_name': 'Sánchez',
+    'gender': 'female',
+    'age': 28,
+    'marital_status': 'not married',
+    'skills': ['Python', 'Matlab'],
+    'country': 'Spain',
+    'city': 'Barcelona'
+}
+
+del student['city']
+
+# 11.Delete one of the dictionaries
+del student
+
