@@ -90,3 +90,32 @@ if my_age >= int(your_age):
 else:
      print('You are', abs(difference), 'years older than me')
 
+# 3.Get two numbers from the user using input prompt. If a is greater than b return a is greater than b, 
+# if a is less b return a is smaller than b, else a is equal to b
+a = input('Enter number one: ')
+b = input('Enter number two: ')
+
+if a > b:
+     print(a, 'is greater than', b)
+elif a < b:
+     print(a, 'is smaller than', b)
+else:
+     print(a, 'is equal to', b)
+    
+# 4.Write a code which gives grade to students according to theirs scores
+score = input('Enter your score: ')
+
+if 80 < int(score) < 100:
+     print('Your grade is A')
+elif 70 < int(score) < 89:
+     print('Your grade is B')
+elif 60 < int(score) < 69:
+     print('Your grade is C')
+elif 50 < int(score) < 59:
+     print('Your grade is D')
+elif 0 < int(score) < 49:
+     print('Your grade is F')
+else:
+     print('Error, the score must be a number between 0 a 100')
+     score = input('Enter your score: ')
+
