@@ -130,6 +130,8 @@ elif month == ' December' or month == 'January' or month == 'February':
      print('The season is Winter')
 elif month == 'March' or month == 'April' or month == 'May':
      print('The season is Spring')
+elif month == 'June' or month == 'July' or month == 'August':
+     print('The season is Summer')
 else:
      print('Error, the input must be a month of the year')
      month = input('Enter the month: ')
@@ -137,4 +139,13 @@ else:
 # 6.The following list contains some fruits. If a fruit doesn't exist in the list 
 # add the fruit to the list and print the modified list. If the fruit exists print('That fruit already exist in the list')
 fruits = ['banana', 'orange', 'mango', 'lemon']
+fruit = input('Enter a fruit: ')
+
+if fruit in fruits:
+     print('That fruit already exist in the list')
+     fruit = input('Enter a fruit: ')
+else:
+     fruits.append(fruit)
+     print(fruits)
+
 
