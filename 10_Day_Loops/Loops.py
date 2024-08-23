@@ -84,3 +84,51 @@ print('outside the loop')
 the execution of the loop continues if there are any iterations left.'''
 
 # The Range Function
+lst = list(range(11)) 
+print(lst) # [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+st = set(range(1, 11))    # 2 arguments indicate start and end of the sequence, step set to default 1
+print(st) # {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+
+lst = list(range(0,11,2))
+print(lst) # [0, 2, 4, 6, 8, 10]
+st = set(range(0,11,2))
+print(st) #  {0, 2, 4, 6, 8, 10}
+
+for number in range(11):
+    print(number)   # prints 0 to 10, not including 11
+
+# Nested For Loop
+person = {
+    'first_name':'Anna',
+    'last_name': 'Sanchez',
+    'age':28,
+    'country':'Spain',
+    'is_married':False,
+}
+
+for key in person:
+    if key == 'skills':
+        for skill in person['skills']:
+            print(skill)
+
+# For Else
+''' If we want to execute some message when the loop ends,
+we use else'''
+
+for number in range(11):
+    print(number)   # prints 0 to 10, not including 11
+else:
+    print('The loop stops at', number)
+
+# Pass
+''' when statement is required (after semicolon), 
+but we don't like to execute any code there, we can write the 
+word pass to avoid errors. Also we can use it as a placeholder, for future statements.'''
+
+#for number in range(6):
+    #pass
+
+
+
+# Exercicies
+# 1.Iterate 0 to 10 using for loop, do the same using while loop.
