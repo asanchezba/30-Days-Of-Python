@@ -132,3 +132,33 @@ word pass to avoid errors. Also we can use it as a placeholder, for future state
 
 # Exercicies
 # 1.Iterate 0 to 10 using for loop, do the same using while loop.
+for i in range(11): 
+     print(i)
+
+count = 0
+while count <= 10:
+    print(count)
+    count = count + 1
+
+# 2.Iterate 10 to 0 using for loop, do the same using while loop.
+for i in range(10, -1, -1):
+    print(i)
+
+count = 11
+while count >= 0:
+    print(count)
+    count = count - 1
+
+# 3.Write a loop that makes seven calls to print(), so we get on the output of a triangle
+for i in range(1, 8):  
+    print('#' * i)
+
+# 4.Use nested loops to create a pattern with '#'
+rows = 8
+columns = 8
+
+for i in range(rows):
+    for j in range(columns):
+        print('#', end=' ')
+    # Move to the next line after printing all columns
+    print()
