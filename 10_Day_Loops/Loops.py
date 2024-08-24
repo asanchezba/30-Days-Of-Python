@@ -183,3 +183,31 @@ for i in range(11):
 # using a for loop and print out the items.
 
 lst = ['Python', 'Numpy', 'Pandas', 'Django', 'Flask']
+for string in lst:
+    print(string)
+
+# 7.Use for loop to iterate from 0 to 100 and print only even numbers
+for i in range(101):
+    if i %2 == 0:
+        print(i)
+
+# 8.Use for loop to iterate from 0 to 100 and print only odd numbers
+for i in range(101):
+    if i %2 != 0:
+        print(i)
+
+# 9.Use for loop to iterate from 0 to 100 and print the sum of all numbers.
+total_sum = 0
+for i in range(101):
+    total_sum += i
+print("The sum of all numbers is:", total_sum)
+
+# 10.Use for loop to iterate from 0 to 100 and print the sum of all evens and the sum of all odds.
+total_sum = 0
+for i in range(100):
+    if i %2 == 0:
+        total_sum += i 
+    if i %2 != 0:
+        total_sum += 1
+print("The sum of all evens is:", total_sum)
+print("The sum of all odds is:", total_sum)
