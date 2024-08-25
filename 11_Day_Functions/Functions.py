@@ -255,7 +255,15 @@ def calculate_slope(x1,y1,x2,y2):
     return slope
 print(calculate_slope(2,4,9,24))
 
-# 7.
+# 7.Quadratic equation is calculated as follows: 
+# ax² + bx + c = 0. Write a function which calculates 
+# solution set of a quadratic equation, solve_quadratic_eqn.
+def solve_quadratic_eqn(a,b,c):
+    x1 = (-b + (b**2 - 4*a*c)**(1/2))/(2*a)
+    x2 = (-b - (b**2 - 4*a*c)**(1/2))/(2*a)
+    return x1, x2
+print(solve_quadratic_eqn(2,13,5))
+
 
 
      
