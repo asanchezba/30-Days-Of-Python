@@ -250,8 +250,14 @@ def check_season(month):
 print(check_season('April'))
 
 # 6.Write a function called calculate_slope which return the slope of a linear equation
-def calculate_slope(equation):
-    
+def calculate_slope(x1,y1,x2,y2):
+    slope = (y2 - y1) / (x2 - x1)
+    return slope
+print(calculate_slope(2,4,9,24))
+
+# 7.
+
+
      
 
 
