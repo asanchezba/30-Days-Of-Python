@@ -155,6 +155,80 @@ def find_even_numbers(n):
 print(find_even_numbers(10))
 
 # Functions with Default Parameters
+''' Sometimes we pass default values to parameters, when we invoke the function.
+If we do not pass arguments when calling the function, their default values will be used.'''
+def greetings (name = 'Peter'):
+    message = name + ', welcome to Python for Everyone!'
+    return message
+print(greetings())
+print(greetings('Anna'))
+
+def generate_full_name (first_name = 'Anna', last_name = 'Sánchez'):
+    space = ' '
+    full_name = first_name + space + last_name
+    return full_name
+print(generate_full_name())
+print(generate_full_name('Lewis','Hamilton'))
+
+# Arbitrary Number of Arguments
+''' If we do not know the number of arguments we pass to our function,
+we can create a function which can take arbitrary number of arguments 
+by adding * before the parameter name.'''
+def sum_all_nums(*nums):
+    total = 0
+    for num in nums:
+        total += num     # same as total = total + num 
+    return total
+print(sum_all_nums(2, 3, 5)) 
+
+# Default and Arbitrary Number of Parameters in Functions
+def generate_groups (team,*args):
+    print(team)
+    for i in args:
+        print(i)
+print(generate_groups('Team-1','Ash','Brook','David','Eyob'))
+
+# Function as a Parameter of Another Function
+def square_number (n):
+    return n * n
+def do_something(f, x):
+    return f(x)
+print(do_something(square_number, 3))
+
+
+
+
+# Exercicies
+# 1.Declare a function add_two_numbers. It takes two parameters and it returns a sum.
+def add_two_numbers():
+    num_one = 2
+    num_two = 3
+    total = num_one + num_two
+    print(total)
+add_two_numbers()
+
+# 2.Area of a circle is calculated as follows: area = π x r x r. 
+# Write a function that calculates area_of_circle.
+def area_of_circle():
+    Pi = 3.14
+    r = 34
+    area = Pi * r * r
+    print(area)
+area_of_circle()
+
+# 3.Write a function called add_all_nums which takes arbitrary 
+# number of arguments and sums all the arguments. Check if all 
+# the list items are number types. If not do give a reasonable feedback.
+def add_all_nums(*args):
+    if all(isinstance(arg, (int, float)) for arg in args):
+        return sum(args)
+    else:
+        return "All arguments must be numbers (int or float)."
+print(add_all_nums(2,4,10))
+
+# 4.Temperature in °C can be converted to °F 
+# using this formula: °F = (°C x 9/5) + 32. Write a 
+# function which converts °C to °F, convert_celsius_to-fahrenheit.
 
 
 
