@@ -260,10 +260,16 @@ print(calculate_slope(2,4,9,24))
 # solution set of a quadratic equation, solve_quadratic_eqn.
 def solve_quadratic_eqn(a,b,c):
     x1 = (-b + (b**2 - 4*a*c)**(1/2))/(2*a)
-    x2 = (-b - (b**2 - 4*a*c)**(1/2))/(2*a)
+    x2 = (-b - (b**2 - 4*a*c)**(1/2))/(2*a) 
     return x1, x2
 print(solve_quadratic_eqn(2,13,5))
 
+# 8.Declare a function named print_list. It takes a 
+# list as a parameter and it prints out each element of the list.
+def print_list(list):
+    for element in list:
+        print(element)
+print(print_list(['Arsenal', 'FC Barcelona', 'Juventus']))
 
 
      
