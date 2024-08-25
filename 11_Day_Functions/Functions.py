@@ -229,6 +229,31 @@ print(add_all_nums(2,4,10))
 # 4.Temperature in °C can be converted to °F 
 # using this formula: °F = (°C x 9/5) + 32. Write a 
 # function which converts °C to °F, convert_celsius_to-fahrenheit.
+def convert_celcius_to_fahrenheit(celcius):
+    ºF = (celcius * 9/5) + 32
+    return ºF
+print(convert_celcius_to_fahrenheit(25))
+
+# 5.Write a function called check-season, it takes a month 
+# parameter and returns the season: Autumn, Winter, Spring or Summer.
+def check_season(month):
+    if month == 'September' or month == 'October' or month == 'November':
+     return('The season is Autum')
+    elif month == ' December' or month == 'January' or month == 'February':
+     return('The season is Winter')
+    elif month == 'March' or month == 'April' or month == 'May':
+     return('The season is Spring')
+    elif month == 'June' or month == 'July' or month == 'August':
+     return('The season is Summer')
+    else:
+     return('Error, the input must be a month of the year')
+print(check_season('April'))
+
+# 6.Write a function called calculate_slope which return the slope of a linear equation
+def calculate_slope(equation):
+    
+     
+
 
 
 
