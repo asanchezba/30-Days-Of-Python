@@ -271,6 +271,17 @@ def print_list(list):
         print(element)
 print(print_list(['Arsenal', 'FC Barcelona', 'Juventus']))
 
+# 9.Declare a function named reverse_list. It takes an array 
+# as a parameter and it returns the reverse of the array (use loops).
+def reverse_list(array):
+    reversed_array = []
+    for i in range(len(array) - 1, -1, -1):
+        reversed_array.append(array[i])
+    return reversed_array
+
+print(reverse_list([1, 2, 3, 4, 5]))
+
+
 
      
 
