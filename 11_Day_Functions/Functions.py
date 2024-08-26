@@ -278,8 +278,22 @@ def reverse_list(array):
     for i in range(len(array) - 1, -1, -1):
         reversed_array.append(array[i])
     return reversed_array
-
 print(reverse_list([1, 2, 3, 4, 5]))
+
+# 10.Declare a function named capitalize_list_items. It takes 
+# a list as a parameter and it returns a capitalized list of items
+def capitalize_list_items(list):
+    for elements in list:
+        return elements.capitalize()
+    
+list = ['arsenal', 'barça']
+print(capitalize_list_items(list))
+
+
+
+
+
+
 
 
 
