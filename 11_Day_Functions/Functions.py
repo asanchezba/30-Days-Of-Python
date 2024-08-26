@@ -286,7 +286,7 @@ def capitalize_list_items(list):
     for elements in list:
         return elements.capitalize()
     
-list = ['arsenal', 'barça']
+list = ['you me at six', 'mcfly', 'all time low', 'the vamps']
 print(capitalize_list_items(list))
 
 
