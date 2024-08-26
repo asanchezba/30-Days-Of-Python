@@ -286,8 +286,27 @@ def capitalize_list_items(list):
     for elements in list:
         return elements.capitalize()
     
-list = ['you me at six', 'mcfly', 'all time low', 'the vamps']
-print(capitalize_list_items(list))
+bands = ['you me at six', 'mcfly', 'all time low', 'the vamps']
+print(capitalize_list_items(bands))
+
+# 11.Declare a function named add_item. It takes a list and an item 
+# parameters. It returns a list with the item added at the end.
+def add_item(list, item):
+    list.append(item)
+    return list
+bands = ['you me at six', 'mcfly', 'all time low', 'the vamps']
+print(add_item(bands, '5 seconds of summer'))
+
+# 12.Declare a function named remove_item. It takes a list and an item 
+# parameters. It returns a list with the item removed from it.
+def remove_item(list, item):
+    list.remove(item)
+    return list
+bands = ['you me at six', 'mcfly', 'all time low', 'the vamps']
+print(remove_item(bands, 'the vamps'))
+
+
+
 
 
 
