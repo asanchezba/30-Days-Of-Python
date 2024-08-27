@@ -371,8 +371,28 @@ print(is_empty([]))
 # 19.Write different functions which take lists. They should 
 # calculate_mean, calculate_median, calculate_mode, calculate_range, 
 # calculate_variance, calculate_std (standard deviation).
+def calculate_mean(lst):
+    if len(lst) == 0:  # Check if the list is empty to avoid division by zero
+        return 0
+    mean = sum(lst) / len(lst)  
+    return mean
+numbers = [1, 0, 2, 6]
+print(calculate_mean(numbers))
 
-
+def calculate_median(lst):
+    lst.sort()
+    n = len(lst) # Get the length of the list
+    
+    if n % 2 == 0:
+        mid1 = n // 2 - 1  # First middle element index
+        mid2 = n // 2      # Second middle element index
+        median = (lst[mid1] + lst[mid2]) / 2
+    else:
+        mid = n // 2      
+        median = lst[mid]
+    
+    print(f'The median is {median}')
+calculate_median([1, 23, 95, 14])
 
 
 
