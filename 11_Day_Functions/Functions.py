@@ -334,7 +334,7 @@ def sum_of_even(n):
     return even
 print(sum_of_even(5))
 
-# 16.Declare a function named evens_and_odds . It takes a positive 
+# 16.Declare a function named evens_and_odds. It takes a positive 
 # integer as parameter and it counts number of evens and odds in the number.
 def even_and_odds(n):
     even = 0
@@ -347,6 +347,30 @@ def even_and_odds(n):
     print(f"The number of odds are {odds}.")
     print(f"The number of evens are {even}.")
 even_and_odds(100)
+
+# 17.Call your function factorial, it takes a whole number as a parameter
+#  and it return a factorial of the number
+def factorial(number):
+    factorial = 1
+    for i in range(1,number+1):
+        factorial *= i
+    return factorial
+print(factorial(2))
+
+# 18.Call your function is_empty, it takes a parameter and 
+# it checks if it is empty or not
+def is_empty(parameter):
+    if len(parameter) == 0:
+        print('The parameter is empty')
+        return True
+    else:
+        print('The parameter is not empty')
+        return False
+print(is_empty([]))
+
+# 19.Write different functions which take lists. They should 
+# calculate_mean, calculate_median, calculate_mode, calculate_range, 
+# calculate_variance, calculate_std (standard deviation).
 
 
 
