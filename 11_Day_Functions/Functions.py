@@ -305,8 +305,34 @@ def remove_item(list, item):
 bands = ['you me at six', 'mcfly', 'all time low', 'the vamps']
 print(remove_item(bands, 'the vamps'))
 
+# 13.Declare a function named sum_of_numbers. It takes a number parameter 
+# and it adds all the numbers in that range.
+def sum_of_numbers(n):
+    total = 0
+    for i in range(n+1):
+        total+=i
+    return total
+print(sum_of_numbers(5))
 
+# 14.Declare a function named sum_of_odds. It takes a number parameter and 
+# it adds all the odd numbers in that range.
+def sum_of_odds(n):
+    odds = 0
+    for i in range(n+1):
+        if i % 2 != 0: 
+            odds+=i
+    return odds
+print(sum_of_odds(5))
 
+# 15.Declare a function named sum_of_even. It takes a number parameter and 
+# it adds all the even numbers in that range.
+def sum_of_even(n):
+    even = 0
+    for i in range(n+1):
+        if i % 2 == 0: 
+            even+=i
+    return even
+print(sum_of_even(5))
 
 
 
