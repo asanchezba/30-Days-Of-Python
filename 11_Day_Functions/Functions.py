@@ -394,6 +394,9 @@ def calculate_median(lst):
     print(f'The median is {median}')
 calculate_median([1, 23, 95, 14])
 
+def calculate_mode(lst):
+    number = lst.count()
+
 
 
 
