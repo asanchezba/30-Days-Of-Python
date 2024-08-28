@@ -394,8 +394,15 @@ def calculate_median(lst):
     print(f'The median is {median}')
 calculate_median([1, 23, 95, 14])
 
+from collections import Counter
 def calculate_mode(lst):
-    number = lst.count()
+    c = Counter(lst)
+    max_c = max(c.values())
+    mode = [key for key, value in c.items() if value == max_c]
+    return mode if len(mode) > 1 else mode[0]
+print(calculate_mode([2,4,5,2,4,6,1,2]))
+    
+
 
 
 
