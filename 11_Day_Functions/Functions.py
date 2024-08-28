@@ -401,7 +401,23 @@ def calculate_mode(lst):
     mode = [key for key, value in c.items() if value == max_c]
     return mode if len(mode) > 1 else mode[0]
 print(calculate_mode([2,4,5,2,4,6,1,2]))
-    
+
+def calculate_range(lst):
+    max_lst = max(lst)
+    min_lst = min(lst)
+    range = max_lst - min_lst
+    return range
+print(calculate_range([1,2,36,92,10]))
+
+# 20.Write a function called is_prime, which checks if a number is prime.
+def is_prime(number):
+    if number > 1 and number %number == 0 and number %1 == 0:
+        return True
+    else:
+        return False
+print(is_prime(14))
+
+
 
 
 
