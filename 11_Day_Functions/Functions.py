@@ -411,11 +411,16 @@ print(calculate_range([1,2,36,92,10]))
 
 # 20.Write a function called is_prime, which checks if a number is prime.
 def is_prime(number):
-    if number > 1 and number %number == 0 and number %1 == 0:
-        return True
-    else:
-        return False
-print(is_prime(14))
+    for i in range (2,number):
+        if number % i == 0:
+            return False
+        else:
+            return True
+print(is_prime(10))
+
+# 21.Write a functions which checks if all items are unique in the list.
+def unique(item):
+    
 
 
 
