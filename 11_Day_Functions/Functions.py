@@ -115,7 +115,7 @@ def add_two_numbers (num1, num2):
 print(add_two_numbers(num2 = 3, num1 = 2))
 
 # Function Returning Value - Part 2
-''' If w do not return a value with a function, our function is returing
+''' If we do not return a value with a function, our function is returing
 a None by default. To return a value with a function we use the keyword
 raturn followed by the variable we are returning.'''
 def print_name(firstname):
@@ -418,9 +418,19 @@ def is_prime(number):
             return True
 print(is_prime(10))
 
-# 21.Write a functions which checks if all items are unique in the list.
-def unique(item):
-    
+# 21.Write a function which checks if all items are unique in the list.
+def unique(lst):
+    seen = set()
+    for item in lst:
+        if item in seen:
+            return 'The list is not unique'
+        seen.add(item)
+    return 'The list is unique'
+print(unique([2,4,56,234,4]))
+
+
+
+
 
 
 
