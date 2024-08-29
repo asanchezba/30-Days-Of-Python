@@ -428,6 +428,16 @@ def unique(lst):
     return 'The list is unique'
 print(unique([2,4,56,234,4]))
 
+# 22.Write a function which checks if all the items of the list are of the same data type.
+def same_data_type(lst):
+    data_type = set()
+    for item in lst:
+        if item in data_type:
+            return 'All the items of the list are not the same type'
+        data_type.add(type(item))
+    return 'All the items of the list are the same type'
+
+print(same_data_type([2,'Anna']))
 
 
 
