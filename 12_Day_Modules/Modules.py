@@ -63,3 +63,24 @@ from math import *
 '''we can also rename the name of the function.'''
 from math import pi as  PI
 
+# Random Module
+from random import random, randint
+print(random())   # it doesn't take any arguments; it returns a value between 0 and 0.9999
+print(randint(5, 20)) # it returns a random integer number between [5, 20] inclusive
+
+
+
+# Exercicies
+# 1.Writ a function which generates a six digit/character random_user_id
+import random 
+def random_user_id():
+    length_of_string = 8
+    sample_str = "abcdefghijklmnopqrstuvwxyz0123456789"
+    generated = ''.join(random.choices(sample_str, k = length_of_string))
+    return generated
+print(random_user_id()) 
+
+# 2.Modify the previous task. Declare a function named user_id_gen_by_user. 
+# It doesn’t take any parameters but it takes two inputs using input(). 
+# One of the inputs is the number of characters and the second input is the 
+# number of IDs which are supposed to be generated.
