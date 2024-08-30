@@ -86,8 +86,20 @@ print(random_user_id())
 # number of IDs which are supposed to be generated.
 import random
 def user_id_gen_by_user():
-    number_of_id = input()
-    number_of_char = input()
+    print('Enter number of id: ')
+    number_of_id = int(input())  # Convert input to integer
+    print('Enter number of characters: ')
+    number_of_char = int(input())  # Convert input to integer
+    
     sample_str = "abcdefghijklmnopqrstuvwxyz0123456789"
-    generated = ''.join(random.choices(sample_str, k = number_of_char)
-print(user_id_gen_by_user()) 
+    generated_ids = []  # List to store all generated IDs
+    
+    for i in range(number_of_id):
+        generated = ''.join(random.choices(sample_str, k=number_of_char))
+        generated_ids.append(generated)  # Add each generated ID to the list
+    
+    return generated_ids
+
+generated_ids = user_id_gen_by_user()
+for user_id in generated_ids:
+    print(user_id)
