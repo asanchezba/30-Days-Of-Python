@@ -84,3 +84,10 @@ print(random_user_id())
 # It doesn’t take any parameters but it takes two inputs using input(). 
 # One of the inputs is the number of characters and the second input is the 
 # number of IDs which are supposed to be generated.
+import random
+def user_id_gen_by_user():
+    number_of_id = input()
+    number_of_char = input()
+    sample_str = "abcdefghijklmnopqrstuvwxyz0123456789"
+    generated = ''.join(random.choices(sample_str, k = number_of_char)
+print(user_id_gen_by_user()) 
