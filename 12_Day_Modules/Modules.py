@@ -112,5 +112,12 @@ def rgb_color_gen():
     for i in range(3):  # Loop three times, once for each color component
         generated = random.randint(0, 255)  # Generate a random integer between 0 and 255
         generated_color.append(generated)
-    return generated_color
+    print(f'rgb({generated_color})')
 print(rgb_color_gen())
+
+# 4.Write a function list_of_hexa_colors which returns any number of hexadecimal 
+# colors in an array (six hexadecimal numbers written after #. Hexadecimal numeral 
+# system is made out of 16 symbols, 0-9 and first 6 letters of the alphabet, a-f.
+
+def list_of_colors():
+    
