@@ -120,4 +120,19 @@ print(rgb_color_gen())
 # system is made out of 16 symbols, 0-9 and first 6 letters of the alphabet, a-f.
 
 def list_of_colors():
-    
+    sample = 'abcdef0123456789'
+    generated_color = ''.join(random.choices(sample, k = 6))
+    print(f'#{generated_color}')
+print(list_of_colors())
+
+# 5.Write a function list_of_rgb_colors which returns any number of RGB colors in an array.
+def list_of_rgb_colors(n=1):
+    generated_rgb_colors = []
+    for _ in range(n):
+        r = random.randint(0, 255)
+        g = random.randint(0, 255)
+        b = random.randint(0, 255)
+        generated_rgb_colors.append((r, g, b))
+    return generated_rgb_colors
+print(list_of_rgb_colors(5))
+
