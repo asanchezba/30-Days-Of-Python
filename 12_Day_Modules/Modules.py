@@ -141,17 +141,25 @@ def generate_colors(type,number):
     sample = 'abcdef0123456789'
     generated_rgb_colors = []
     generated_hexa_colors = []
+    
     for i in range(number):
      if type == 'rgb':
         r = random.randint(0, 255)
         g = random.randint(0, 255)
         b = random.randint(0, 255)
-        generated_rgb_colors.append((r, g, b))
-        print(f'rgb({generated_rgb_colors})')
+        generated_rgb_colors.append(f'rgb({r, g, b})')
+        
      elif type == 'hexa':
-         generated_color = ''.join(random.choices(sample, k = number))
-         generated_hexa_colors.append(generate_colors)
-         print(f'#{generated_hexa_colors}')
+         generated_color = ''.join(random.choices(sample, k = 6))
+         generated_hexa_colors.append(f'#{generated_color}')
+
+    if type == 'rgb':
+        return generated_rgb_colors
+    elif type == 'hexa':
+        return generated_hexa_colors
+    else:
+        return []
 
 print(generate_colors('hexa',4))
+print(generate_colors('rgb',2))
 
