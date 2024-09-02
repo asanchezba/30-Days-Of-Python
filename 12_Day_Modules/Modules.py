@@ -136,3 +136,22 @@ def list_of_rgb_colors(n=1):
     return generated_rgb_colors
 print(list_of_rgb_colors(5))
 
+# 6.Write a function generate_colors which can generate any number of hexa or rgb colors.
+def generate_colors(type,number):
+    sample = 'abcdef0123456789'
+    generated_rgb_colors = []
+    generated_hexa_colors = []
+    for i in range(number):
+     if type == 'rgb':
+        r = random.randint(0, 255)
+        g = random.randint(0, 255)
+        b = random.randint(0, 255)
+        generated_rgb_colors.append((r, g, b))
+        print(f'rgb({generated_rgb_colors})')
+     elif type == 'hexa':
+         generated_color = ''.join(random.choices(sample, k = number))
+         generated_hexa_colors.append(generate_colors)
+         print(f'#{generated_hexa_colors}')
+
+print(generate_colors('hexa',4))
+
