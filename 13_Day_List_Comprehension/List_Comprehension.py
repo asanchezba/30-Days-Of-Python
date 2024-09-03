@@ -58,4 +58,25 @@ print(flattened_list)
 '''A small anonymous function without a name. 
 It can take any number of arguments, but can only have one expression.'''
 
+# Creating Lambda Function
+add_two_nums = lambda a, b: a + b
+print(add_two_nums(2,3))
 
+(lambda a, b: a + b)(2,3) # self-invoking lambda function
+
+square = lambda x : x ** 2
+print(square(3))    
+cube = lambda x : x ** 3
+print(cube(3))
+
+multiple_variable = lambda a, b, c: a ** 2 - 3 * b + 4 * c
+print(multiple_variable(5, 5, 3))
+
+# Lambda Function Inside Another Function
+def power(x):
+    return lambda n : x ** n
+
+cube = power(2)(3)   # function power now need 2 arguments to run, in separate rounded brackets
+print(cube)          
+two_power_of_five = power(2)(5) 
+print(two_power_of_five)
