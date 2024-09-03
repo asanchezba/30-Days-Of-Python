@@ -27,8 +27,13 @@ print(result)
 
 # 4.Flatten the following list to a new list
 countries = [[('Finland', 'Helsinki')], [('Sweden', 'Stockholm')], [('Norway', 'Oslo')]]
-flattened_list = [ str for letter in countries for str in letter]
+flattened_list = [[country.upper(), country[:3].upper(), capital.upper()] for sublist in countries for (country, capital) in sublist]
 print(flattened_list) 
+
+'''-The outer loop (for sublist in countries) iterates over each sublist in countries.
+-The inner loop (for (country, capital) in sublist) iterates over each tuple inside these sublists.
+-country[:3].upper() extracts the first three letters of the country name and converts them 
+to uppercase to create the abbreviation.'''
 
 
 
