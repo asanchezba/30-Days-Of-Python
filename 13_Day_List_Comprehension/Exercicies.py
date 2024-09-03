@@ -22,5 +22,13 @@ print(flattened_list)
 #(8, 1, 8, 64, 512, 4096, 32768),
 #(9, 1, 9, 81, 729, 6561, 59049),
 #(10, 1, 10, 100, 1000, 10000, 100000)]
+result = [(i, 1, i**1, i**2, i**3, i**4, i**5) for i in range(11)]
+print(result)
+
+# 4.Flatten the following list to a new list
+countries = [[('Finland', 'Helsinki')], [('Sweden', 'Stockholm')], [('Norway', 'Oslo')]]
+flattened_list = [ str for letter in countries for str in letter]
+print(flattened_list) 
+
 
 
