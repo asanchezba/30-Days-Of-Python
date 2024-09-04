@@ -35,5 +35,9 @@ print(flattened_list)
 -country[:3].upper() extracts the first three letters of the country name and converts them 
 to uppercase to create the abbreviation.'''
 
+# 5.Change the following list to a list of dictionaries
+countries = [[('Finland', 'Helsinki')], [('Sweden', 'Stockholm')], [('Norway', 'Oslo')]]
+flattened_list = [{'country': country.upper(), 'city': city.upper()} for [(country, city)] in countries]
+print(flattened_list)
 
 
