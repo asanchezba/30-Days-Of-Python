@@ -63,3 +63,59 @@ print(closure_result(5))
 print(closure_result(10))  
 
 # Python Decorators
+'''A decorator is a design pattern that allows a user to add 
+new functionality to an existing object without modifying its 
+structure. Decorators are usually called before the definition 
+of a function you want to decorate.'''
+
+# Creating Decorators
+# Normal function
+def greeting():
+    return 'Welcome to Python'
+def uppercase_decorator(function):
+    def wrapper():
+        func = function()
+        make_uppercase = func.upper()
+        return make_uppercase
+    return wrapper
+g = uppercase_decorator(greeting)
+print(g()) 
+
+'''This decorator function is a higher order function
+that takes a function as a parameter'''
+def uppercase_decorator(function):
+    def wrapper():
+        func = function()
+        make_uppercase = func.upper()
+        return make_uppercase
+    return wrapper
+@uppercase_decorator
+def greeting():
+    return 'Welcome to Python'
+print(greeting())
+
+# Applying Multiple Decorators to a Single Function
+# First Decorator
+def uppercase_decorator(function):
+    def wrapper():
+        func = function()
+        make_uppercase = func.upper()
+        return make_uppercase
+    return wrapper
+
+# Second decorator
+def split_string_decorator(function):
+    def wrapper():
+        func = function()
+        splitted_string = func.split()
+        return splitted_string
+
+    return wrapper
+
+@split_string_decorator
+@uppercase_decorator     # order with decorators is important in this case - .upper() function does not work with lists
+def greeting():
+    return 'Welcome to Python'
+print(greeting()) 
+
+# Accepting Parameters in Decorator Functions
