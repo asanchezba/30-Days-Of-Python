@@ -54,5 +54,12 @@ print(list(six_or_more_characters))
 
 # 7.Use filter to filter out countries starting with an 'E'
 def first_letter(countries):
-    if 
+    if 'E' in countries:
+        return True
+    return False
+
+first_letter = filter(first_letter, countries)
+print(list(first_letter))
+
+# 8.Chain two or more list iterators (eg. arr.map(callback).filter(callback).reduce(callback))
 
