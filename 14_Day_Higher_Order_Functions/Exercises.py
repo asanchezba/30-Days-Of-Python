@@ -25,5 +25,34 @@ def change_to_upper(name):
 names_upper_case = map(change_to_upper, names)
 print(list(names_upper_case))  
 
-# 4.Use filter to filter out countries containing 'land'.
+# 4.Use filter to filter out countries containing 'land'
+def land_in_countries(countries):
+    if 'land' in countries:
+        return True
+    return False
+
+land_in_countries = filter(land_in_countries, countries)
+print(list(land_in_countries))
+
+# 5.Use filter to filter out countries having exactly six characters
+def six_characters(countries):
+    if len(countries) == 6:
+        return True
+    return False
+
+six_characters = filter(six_characters, countries)
+print(list(six_characters))
+
+# 6.Use filter to filter out countries containing six letters and more in the country list
+def six_or_more_characters(countries):
+    if len(countries) >= 6:
+        return True
+    return False
+
+six_or_more_characters = filter(six_or_more_characters, countries)
+print(list(six_or_more_characters))
+
+# 7.Use filter to filter out countries starting with an 'E'
+def first_letter(countries):
+    if 
 
