@@ -63,3 +63,20 @@ print(list(first_letter))
 
 # 8.Chain two or more list iterators (eg. arr.map(callback).filter(callback).reduce(callback))
 
+
+# 9.Declare a function called get_string_lists which takes a 
+# list as a parameter and then returns a list containing only string items.
+def get_string_lists(lst):
+    return [item for item in lst if isinstance(item, str)]
+
+lst = [1, 'hello', 3.14, True, 'world']
+string_list = get_string_lists(lst)
+print(string_list)
+
+# 10.Use reduce to sum all the numbers in the numbers list.
+
+
+# 11.Use reduce to concatenate all the countries and to produce this sentence: 
+# Estonia, Finland, Sweden, Denmark, Norway, and Iceland are north European countries
+
+# 12.
