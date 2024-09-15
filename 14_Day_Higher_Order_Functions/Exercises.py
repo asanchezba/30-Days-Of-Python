@@ -74,9 +74,19 @@ string_list = get_string_lists(lst)
 print(string_list)
 
 # 10.Use reduce to sum all the numbers in the numbers list.
+from functools import reduce
+def sum_all(a,b):
+    return a + b
 
+print(reduce(sum_all,numbers))
 
 # 11.Use reduce to concatenate all the countries and to produce this sentence: 
 # Estonia, Finland, Sweden, Denmark, Norway, and Iceland are north European countries
+def sentence(countries,string):
+    return countries + ', ' + string
+
+result = reduce(sentence, countries) + ' are north European countries'
+result = result.replace(', Iceland', ', and Iceland')
+print(result)
 
 # 12.
