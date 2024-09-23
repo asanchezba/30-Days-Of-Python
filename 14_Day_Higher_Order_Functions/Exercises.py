@@ -91,4 +91,17 @@ print(result)
 
 # 12.Create a function returning a dictionary, where keys stand for starting 
 # letters of countries and values are the number of country names starting with that letter.
-
+def count_countries_by_letter(countries):
+    letter_count = {}
+    
+    for country in countries:
+        first_letter = country[0].upper()
+        if first_letter in letter_count:
+            letter_count[first_letter] += 1
+        else:
+            letter_count[first_letter] = 1
+    
+    return letter_count
+    
+result = count_countries_by_letter(countries)
+print(result)
