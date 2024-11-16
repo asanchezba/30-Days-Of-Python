@@ -42,5 +42,15 @@ args = [2, 7]
 numbers = range(*args)  # call with arguments unpacked from a list
 print(numbers) 
 
+'''A list or a tuple can also be unpacked like this: '''
+countries = ['Finland', 'Sweden', 'Norway', 'Denmark', 'Iceland']
+fin, sw, nor, *rest = countries
+print(fin, sw, nor, rest)   
+numbers = [1, 2, 3, 4, 5, 6, 7]
+one, *middle, last = numbers
+print(one, middle, last)
+
+# Unpacking Dictionaries
+
 
 
