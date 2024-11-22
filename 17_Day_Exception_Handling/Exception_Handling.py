@@ -51,6 +51,65 @@ one, *middle, last = numbers
 print(one, middle, last)
 
 # Unpacking Dictionaries
+def unpacking_person_info(name, country, city, age):
+    return f'{name} lives in {country}, {city}. He is {age} year old.'
+dct = {'name':'Anna', 'country':'Spain', 'city':'Sabadell', 'age':29}
+print(unpacking_person_info(**dct))
 
 
+# Packing
+''' Sometimes we never know how many arguments need to be passed to a python function. 
+We can use the packing method to allow our function to take unlimited number or arbitrary 
+number of arguments.'''
+
+# Packing Lists
+def sum_all(*args):
+    s = 0
+    for i in args:
+        s += i
+    return s
+print(sum_all(1, 2, 3))             
+print(sum_all(1, 2, 3, 4, 5, 6, 7))
+
+# Packing Dictionaries
+def packing_person_info(**kwargs):
+    # check the type of kwargs and it is a dict type
+    # print(type(kwargs))
+    # Printing dictionary items
+    for key in kwargs:
+        print(f"{key} = {kwargs[key]}")
+    return kwargs
+
+print(packing_person_info(name="Anna",
+      country="Spain", city="Sabadell", age=29))
+
+# Spreading
+lst_one = [1, 2, 3]
+lst_two = [4, 5, 6, 7]
+lst = [0, *lst_one, *lst_two]
+print(lst)          
+country_lst_one = ['Finland', 'Sweden', 'Norway']
+country_lst_two = ['Denmark', 'Iceland']
+nordic_countries = [*country_lst_one, *country_lst_two]
+print(nordic_countries)
+
+# Enumerate
+'''If we are interested in an index of a list, we use enumerate built-in function to get the index
+of each item in the list'''
+
+for index, item in enumerate([20, 30, 40]):
+    print(index, item)
+
+for index, i in enumerate(countries):
+    print('hi')
+    if i == 'Finland':
+        print('The country {i} has been found at index {index}')
+
+# Zip
+fruits = ['banana', 'orange', 'mango', 'lemon', 'lime']
+vegetables = ['Tomato', 'Potato', 'Cabbage', 'Onion', 'Carrot']
+fruits_and_veges = []
+for f, v in zip(fruits, vegetables):
+    fruits_and_veges.append({'fruit':f, 'veg':v})
+print(fruits_and_veges)
 
