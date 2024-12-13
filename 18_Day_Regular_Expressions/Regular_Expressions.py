@@ -19,7 +19,7 @@ re.sub: Replaces one or many matches within a string'''
 
 # Match
 # syntac
-re.match(substring, string, re.I)
+'''re.match(substring, string, re.I)'''
 # substring is a string or a pattern, string is the text we look for a pattern , re.I is case ignore
 
 
@@ -42,7 +42,7 @@ print(match)  # None
 
 # Search
 # syntax
-re.match(substring, string, re.I)
+'''re.match(substring, string, re.I)'''
 # substring is a pattern, string is the text we look for a pattern , re.I is case ignore flag
 
 txt = '''Python is the most beautiful language that a human being has ever created.
@@ -59,3 +59,23 @@ start, end = span
 print(start, end)  # 100 105
 substring = txt[start:end]
 print(substring)
+
+# Searching for All Matches Using findall
+txt = '''Python is the most beautiful language that a human being has ever created.
+I recommend python for a first programming language'''
+matches = re.findall('language', txt, re.I)
+print(matches)
+
+txt = '''Python is the most beautiful language that a human being has ever created.
+I recommend python for a first programming language'''
+matches = re.findall('python', txt, re.I) #using re.I both lowercase and uppercase letters are included
+print(matches)
+
+# Replacing a Substring
+txt = '''Python is the most beautiful language that a human being has ever created.
+I recommend python for a first programming language'''
+match_replaced = re.sub('Python|python', 'JavaScript', txt, re.I)
+print(match_replaced)
+# alternative
+#match_replaced = re.sub('[Pp]ython', 'JavaScript', txt, re.I)
+#print(match_replaced)
