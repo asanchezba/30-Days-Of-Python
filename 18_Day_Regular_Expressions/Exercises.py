@@ -40,3 +40,25 @@ print('Points = ', points)
 print('Distance = ', distance)
 
 # 3. Write a pattern which identifies if a string is a valid python variable
+import keyword
+
+def is_valid_variable(name):
+    #  check if it matches the varable name pattern
+    pattern = r'^[a-zA-Z_][a-zA-Z0-9_]*$'
+    if re.match(pattern, name):
+        # Ensure it is not a Python keyword
+        return name not in keyword.kwlist
+    return False
+
+test_names = ['first_name', 'first-name', '1first_name', 'firstname']
+for name in test_names:
+    print(f"'{name}':", is_valid_variable(name))
+
+
+# 4. Clean the following text. After cleaning, count three most frequent words in the string.
+sentence = '''%I $am@% a %tea@cher%, &and& I lo%#ve %tea@ching%;. There $is nothing; &as& mo@re 
+rewarding as educa@ting &and& @emp%o@wering peo@ple. ;I found tea@ching m%o@re interesting tha@n 
+any other %jo@bs. %Do@es thi%s mo@tivate yo@u to be a tea@cher!?'''
+
+clean_text = re.sub('%', '', sentence)
+print(clean_text)
